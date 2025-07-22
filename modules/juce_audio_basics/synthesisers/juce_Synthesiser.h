@@ -274,7 +274,7 @@ protected:
     void clearCurrentNote();
 
 
-private:
+protected:
     //==============================================================================
     friend class Synthesiser;
 
@@ -284,6 +284,8 @@ private:
     SynthesiserSound::Ptr currentlyPlayingSound;
     bool keyIsDown = false, sustainPedalDown = false, sostenutoPedalDown = false;
 
+private:
+    //==============================================================================
     AudioBuffer<float> tempBuffer;
 
     JUCE_LEAK_DETECTOR (SynthesiserVoice)
