@@ -257,7 +257,7 @@ public:
         }
     }
 
-private:
+protected:
     //==============================================================================
     void recalculateRates() noexcept
     {
