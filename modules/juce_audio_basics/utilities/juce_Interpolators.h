@@ -45,7 +45,7 @@ namespace juce
 */
 class Interpolators
 {
-private:
+public:
     struct WindowedSincTraits
     {
         static constexpr float algorithmicLatency = 100.0f;
